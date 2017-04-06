@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/joshuago78/shapes.svg?branch=master)](https://travis-ci.org/joshuago78/shapes) [![Coverage Status](https://coveralls.io/repos/github/joshuago78/shapes/badge.svg?branch=enhancement%2Fautomated-testing%2F1)](https://coveralls.io/github/joshuago78/shapes?branch=enhancement%2Fautomated-testing%2F1)
+[![Build Status](https://travis-ci.org/joshuago78/shapes.svg?branch=master)](https://travis-ci.org/joshuago78/shapes) [![Coverage Status](https://coveralls.io/repos/github/joshuago78/shapes/badge.svg?branch=master)](https://coveralls.io/github/joshuago78/shapes?branch=master)
 
 # Shapes
 
