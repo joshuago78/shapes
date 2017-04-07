@@ -3,19 +3,19 @@ import unittest
 import shapes
 
 
-class TestTriangle(unittest.TestCase):
+class TestRegularPolygon(unittest.TestCase):
 
 	def setUp(self):
-		self.triangle = shapes.RegularTriangle(1)
+		self.square = shapes.RegularPolygon(4, 1)
 
 	def test_triangle_perimeter(self):
-		self.assertEqual(self.triangle.perimeter, 3)
+		self.assertEqual(self.square.perimeter, 4)
 
 	def test_triangle_apothem(self):
-		self.assertEqual(self.triangle.apothem, 0.288675134594813)
+		self.assertEqual(self.square.apothem, 0.5000000000000001)
 
 	def test_triangle_area(self):
-		self.assertEqual(self.triangle.area, 0.43301270189221946)
+		self.assertEqual(self.square.area, 1.0000000000000002)
 
 
 if __name__ == "__main__":
