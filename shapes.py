@@ -4,11 +4,10 @@ from math import radians
 
 class RegularPolygon():
     # A regular shape has sides of equal length
-
-    num_sides = None
     
-    def __init__(self, side_length):
+    def __init__(self, num_side, side_length):
         self.side_length = side_length
+        self.num_sides = num_sides
 
     @property
     def perimeter(self):
