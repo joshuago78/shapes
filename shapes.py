@@ -5,9 +5,14 @@ from math import radians
 class RegularPolygon():
     # A regular shape has sides of equal length
     
-    def __init__(self, num_sides, side_length):
+    def __init__(self, side_length, num_sides=None):
+        if side_length <= 0:
+            raise Exception('Side length must be greater than zero')
         self.side_length = side_length
-        self.num_sides = num_sides
+        if num_sides:
+            if num_sides < 3:
+                raise Exception('A polygon must have at least 3 sides')
+            self.num_sides = num_sides
 
     @property
     def perimeter(self):
@@ -30,34 +35,34 @@ class RegularTriangle(RegularPolygon):
 
 class Square(RegularPolygon):
 
-    pass
+    num_sides = 4
 
 
 class RegularPentagon(RegularPolygon):
 
-    pass
+    num_sides = 4
 
 
 class RegularHexagon(RegularPolygon):
 
-    pass
+    num_sides = 5
 
 
 class RegularSeptagon(RegularPolygon):
 
-    pass
+    num_sides = 7
 
 
 class RegularOctagon(RegularPolygon):
 
-    pass
+    num_sides = 8
 
 
 class RegularNonagon(RegularPolygon):
 
-    pass
+    num_sides = 9
 
 
 class RegularDecagon(RegularPolygon):
 
-    pass
+    num_sides = 11
