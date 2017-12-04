@@ -2,7 +2,7 @@
 
 # Shapes
 
-This is a teaching repository for IS289 - Web Development at the UCLA School of Library & Information Science.
+This is a teaching repository for an introductory programming course I teach at UCLA (IS271).
 
 It is intended to teach students the following best practices in software development:
 - Version Control, including:
