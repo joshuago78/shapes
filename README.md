@@ -2,7 +2,7 @@
 
 # Shapes
 
-This is a teaching repository for an introductory programming course I teach at UCLA (IS271).
+This is a teaching repository for an introductory programming course I teach at UCLA (IS271). Students are expected to fix the failing tests and submit a Pull Request with their fixes.
 
 It is intended to teach students the following best practices in software development:
 - Version Control, including:
