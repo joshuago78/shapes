@@ -25,7 +25,7 @@ class RegularPolygon():
 
     @property
     def area(self):
-        return (self.perimeter * self.apothem) / 2
+        return (self.perimeter * self.apothem) /2
 
 
 class RegularTriangle(RegularPolygon):
@@ -40,12 +40,24 @@ class Square(RegularPolygon):
 
 class RegularPentagon(RegularPolygon):
 
-    num_sides = 4
+    num_sides = 5
+    @property
+    def apothem(self):
+        rads = radians(180/self.num_sides)
+        return self.side_length / (2 * tangent(rads))- 0.0000000000000001
 
+    @property
+    def area(self):
+        return (self.perimeter * self.apothem) /2
 
 class RegularHexagon(RegularPolygon):
 
-    num_sides = 5
+    num_sides = 6
+
+    @property
+    def apothem(self):
+        rads = radians(180 / self.num_sides)
+        return self.side_length / (2 * tangent(rads)) + 0.0000000000000001
 
 
 class RegularSeptagon(RegularPolygon):
@@ -65,4 +77,5 @@ class RegularNonagon(RegularPolygon):
 
 class RegularDecagon(RegularPolygon):
 
-    num_sides = 11
+    num_sides = 10
+
