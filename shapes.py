@@ -1,4 +1,4 @@
-from math import tan as tangent #
+from math import tan as tangent #changes are made to the area method
 from math import radians
 
 
