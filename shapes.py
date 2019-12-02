@@ -1,4 +1,4 @@
-from math import tan as tangent #changes are made to the area method
+from math import tan as tangent
 from math import radians
 
 
@@ -16,12 +16,12 @@ class RegularPolygon():
 
     @property
     def perimeter(self):
-        return self.num_sides * self.side_length
+        return round(self.num_sides * self.side_length,16)
 
     @property
     def apothem(self):
         rads = radians(180/self.num_sides)
-        return self.side_length / (2 * tangent(rads))
+        return round(self.side_length / (2 * tangent(rads)),16)
 
     @property
     def area(self):
@@ -41,23 +41,10 @@ class Square(RegularPolygon):
 class RegularPentagon(RegularPolygon):
 
     num_sides = 5
-    @property
-    def apothem(self):
-        rads = radians(180/self.num_sides)
-        return self.side_length / (2 * tangent(rads))
-
-    @property
-    def area(self):
-        return (self.perimeter * self.apothem) /2
 
 class RegularHexagon(RegularPolygon):
 
     num_sides = 6
-
-    @property
-    def apothem(self):
-        rads = radians(180 / self.num_sides)
-        return self.side_length / (2 * tangent(rads))
 
 
 class RegularSeptagon(RegularPolygon):
