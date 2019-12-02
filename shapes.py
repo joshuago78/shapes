@@ -44,7 +44,7 @@ class RegularPentagon(RegularPolygon):
     @property
     def apothem(self):
         rads = radians(180/self.num_sides)
-        return self.side_length / (2 * tangent(rads))- 0.0000000000000001
+        return self.side_length / (2 * tangent(rads))
 
     @property
     def area(self):
@@ -57,7 +57,7 @@ class RegularHexagon(RegularPolygon):
     @property
     def apothem(self):
         rads = radians(180 / self.num_sides)
-        return self.side_length / (2 * tangent(rads)) + 0.0000000000000001
+        return self.side_length / (2 * tangent(rads))
 
 
 class RegularSeptagon(RegularPolygon):
