@@ -16,12 +16,12 @@ class RegularPolygon():
 
     @property
     def perimeter(self):
-        return round(self.num_sides * self.side_length,16)
+        return self.num_sides * self.side_length,16
 
     @property
     def apothem(self):
         rads = radians(180/self.num_sides)
-        return round(self.side_length / (2 * tangent(rads)),16)
+        return self.side_length / (2 * tangent(rads))
 
     @property
     def area(self):
