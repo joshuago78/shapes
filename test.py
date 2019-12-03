@@ -78,10 +78,10 @@ class TestHexagon(unittest.TestCase):
         self.assertEqual(self.hexagon.perimeter, 6)
 
     def test_hexagon_apothem(self):
-        self.assertEqual(self.hexagon.apothem, 0.8660254037844388)
+        self.assertEqual(self.hexagon.apothem, 0.8660254037844387)
 
     def test_hexagon_area(self):
-        self.assertEqual(self.hexagon.area, 2.5980762113533165)
+        self.assertEqual(self.hexagon.area, 2.598076211353316)
 
 class TestSeptagon(unittest.TestCase):
 
