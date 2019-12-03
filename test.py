@@ -58,30 +58,32 @@ class TestPentagon(unittest.TestCase):
 
     def setUp(self):
         self.pentagon = shapes.RegularPentagon(1)
+        self.regpoly5 = shapes.RegularPolygon(1, 5)
 
     def test_pentagon_perimeter(self):
         self.assertEqual(self.pentagon.perimeter, 5)
 
     def test_pentagon_apothem(self):
-        self.assertEqual(self.pentagon.apothem, 0.6881909602355868)
+        self.assertEqual(self.pentagon.apothem, self.regpoly5.apothem)
 
     def test_pentagon_area(self):
-        self.assertEqual(self.pentagon.area, 1.720477400588967)
+        self.assertEqual(self.pentagon.area, self.regpoly5.area)
 
 
 class TestHexagon(unittest.TestCase):
 
     def setUp(self):
         self.hexagon = shapes.RegularHexagon(1)
+        self.regpoly6 = shapes.RegularPolygon(1, 6)
 
     def test_hexagon_perimeter(self):
         self.assertEqual(self.hexagon.perimeter, 6)
 
     def test_hexagon_apothem(self):
-        self.assertEqual(self.hexagon.apothem, 0.8660254037844387)
+        self.assertEqual(self.hexagon.apothem, self.regpoly6.apothem)
 
     def test_hexagon_area(self):
-        self.assertEqual(self.hexagon.area, 2.598076211353316)
+        self.assertEqual(self.hexagon.area, self.regpoly6.area)
 
 class TestSeptagon(unittest.TestCase):
 
