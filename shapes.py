@@ -16,7 +16,7 @@ class RegularPolygon():
 
     @property
     def perimeter(self):
-        return self.num_sides * self.side_length,16
+        return self.num_sides * self.side_length
 
     @property
     def apothem(self):
