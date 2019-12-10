@@ -39,22 +39,24 @@ class Square(RegularPolygon):
 
 
 class RegularPentagon(RegularPolygon):
-
-    num_sides = 4
-
-
-class RegularHexagon(RegularPolygon):
+    
 
     num_sides = 5
 
 
-class RegularSeptagon(RegularPolygon):
+class RegularHexagon(RegularPolygon):
 
+
+    num_sides = 6
+
+
+class RegularSeptagon(RegularPolygon):
+    
     num_sides = 7
 
 
 class RegularOctagon(RegularPolygon):
-
+    
     num_sides = 8
 
 
@@ -65,4 +67,4 @@ class RegularNonagon(RegularPolygon):
 
 class RegularDecagon(RegularPolygon):
 
-    num_sides = 11
+    num_sides = 10
