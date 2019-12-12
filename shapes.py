@@ -4,7 +4,7 @@ from math import radians
 
 class RegularPolygon():
     # A regular shape has sides of equal length
-    
+
     def __init__(self, side_length, num_sides=None):
         if side_length <= 0:
             raise Exception('Side length must be greater than zero')
@@ -29,7 +29,7 @@ class RegularPolygon():
 
 
 class RegularTriangle(RegularPolygon):
-    
+
     num_sides = 3
 
 
@@ -40,12 +40,12 @@ class Square(RegularPolygon):
 
 class RegularPentagon(RegularPolygon):
 
-    num_sides = 4
+    num_sides = 5
 
 
 class RegularHexagon(RegularPolygon):
 
-    num_sides = 5
+    num_sides = 6
 
 
 class RegularSeptagon(RegularPolygon):
@@ -65,4 +65,4 @@ class RegularNonagon(RegularPolygon):
 
 class RegularDecagon(RegularPolygon):
 
-    num_sides = 11
+    num_sides = 10
